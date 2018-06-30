@@ -11,6 +11,7 @@ module HeAutoControl
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.time_zone = 'Tokyo'
+    config.active_record.time_zone_aware_types = %i[datetime time]
     config.autoload_paths += %W[#{config.root}/lib]
     config.eager_load_paths += %W[#{config.root}/lib]
 
